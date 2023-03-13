@@ -1,21 +1,6 @@
 const Geozone = require('../models/Geozone')
 
 class GeozoneController {
-    /** пример объекта запроса
-            {
-                name: 'Penza',
-                location: {
-                    "type": "Polygon",
-                    "coordinates": [[
-                        [-109, 41],
-                        [-102, 41],
-                        [-102, 37],
-                        [-109, 37],
-                        [-109, 41]
-                    ]]
-                }
-            }
-    * */
     async createZone(req, res){
         try{
             const newZone = req.body
